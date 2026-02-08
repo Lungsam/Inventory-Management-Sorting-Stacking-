@@ -1,3 +1,8 @@
+///add
+#if defined(KD_MANAGE_INV)
+#	include "packet.h"
+#endif
+
 ///Find
 
 };
