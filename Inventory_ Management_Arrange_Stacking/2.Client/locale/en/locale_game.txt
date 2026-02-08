@@ -1,0 +1,5 @@
+INVENTORY_MANAGEMENT_TITLE	inventory management
+INVENTORY_MANAGEMENT_SORT	Arrange Items
+INVENTORY_MANAGEMENT_STACK	Stack Items
+INVENTORY_MANAGEMENT_SORT_QUESTION	Do you want to rearrange your inventory?
+INVENTORY_MANAGEMENT_STACK_QUESTION	Do you want to stack all your items?
