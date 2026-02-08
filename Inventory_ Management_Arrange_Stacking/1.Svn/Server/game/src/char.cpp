@@ -22,7 +22,7 @@ void CHARACTER::ManageInventory(EPacketCGInventoryManagementSubHeader bActionTyp
 	if (quest::CQuestManager::instance().GetPCForce(GetPlayerID())->IsRunning()) 
 		return;
 
-	if (GetExchange() || IsOpenSafebox() || IsCubeOpen())
+	if (GetExchange() || GetMyShop() || GetShopOwner() || IsOpenSafebox() || IsCubeOpen())
 		return;
 
 	if (GetManageInventoryPulse() > get_global_time()) 
@@ -116,4 +116,5 @@ void CHARACTER::ManageInventory(EPacketCGInventoryManagementSubHeader bActionTyp
 	// Waiting time 15Sce
 	SetManageInventoryPulse(get_global_time() + 15); 
 }
+
 #endif
