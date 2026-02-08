@@ -37,7 +37,9 @@ void CHARACTER::ManageInventory(EPacketCGInventoryManagementSubHeader bActionTyp
 	{
 		if (!item) 
 			return false;
-
+		
+		// !IsStackable() Enough 
+		// But for the future, in case you want to add something
 		static const std::unordered_set<DWORD> s_nonManageableItems = {
 			ITEM_MARRIAGE_RING, ITEM_AUTO_HP_RECOVERY_S, ITEM_AUTO_HP_RECOVERY_M, ITEM_AUTO_HP_RECOVERY_L, ITEM_AUTO_HP_RECOVERY_X,
 			ITEM_AUTO_SP_RECOVERY_S, ITEM_AUTO_SP_RECOVERY_M, ITEM_AUTO_SP_RECOVERY_L, ITEM_AUTO_SP_RECOVERY_X,
@@ -118,3 +120,4 @@ void CHARACTER::ManageInventory(EPacketCGInventoryManagementSubHeader bActionTyp
 }
 
 #endif
+
