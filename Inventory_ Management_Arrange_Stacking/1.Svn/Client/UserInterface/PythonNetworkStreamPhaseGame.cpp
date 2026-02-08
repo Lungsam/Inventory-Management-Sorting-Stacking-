@@ -2,8 +2,8 @@
 #if defined(KD_MANAGE_INV)
 bool CPythonNetworkStream::SendInventoryManagement(BYTE bSubHeader)
 {
-	TPacketCGInventoryManagement packet;
-	TPacketGCRanking Packet;
+	TPacketCGInventoryManagement packet{};
+	TPacketGCRanking Packet{};
 	packet.header = HEADER_CG_INVENTORY_MANAGEMENT;
 	packet.subheader = bSubHeader;
 
